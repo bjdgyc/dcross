@@ -39,7 +39,8 @@ sh build_docker.sh
 # release --skip=publish --debug
 
 
-docker run -it --rm -v $PWD:/app -v /go:/go -w /app bjdgyc/dcross goreleaser build --skip=validate --clean
+docker run -it --rm -v $PWD:/app -v /go:/go -w /app registry.cn-hangzhou.aliyuncs.com/bjdgyc/dcross \
+  goreleaser build --skip=validate --clean
 
 ```
 
@@ -48,7 +49,9 @@ docker run -it --rm -v $PWD:/app -v /go:/go -w /app bjdgyc/dcross goreleaser bui
 ```
 # 直接使用对应架构编译
 # windows/amd64
-# docker run -it --rm -v $PWD:/app -v /go:/go -w /app -e GOPROXY="https://goproxy.cn" --platform=linux/arm64 golang:1.21-bookworm go build -v
+
+docker run -it --rm -v $PWD:/app -v /go:/go -w /app -e GOPROXY="https://goproxy.cn" \
+  --platform=linux/arm64 golang:1.21-bookworm go build -v
 ```
 
 ## 依赖
