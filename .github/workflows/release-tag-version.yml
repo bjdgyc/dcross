@@ -33,9 +33,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          build-args:
-            - Commit=${{ env.COMMIT }}
-            - Ver=${{ env.APP_VER }}
-          tags:
-            - bjdgyc/dcross:latest
-            - bjdgyc/dcross:${{ env.APP_VER }}
+          build-args: Commit=${{ env.COMMIT }},Ver=${{ env.APP_VER }}
+          tags: bjdgyc/dcross:latest,bjdgyc/dcross:${{ env.APP_VER }}
