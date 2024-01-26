@@ -12,6 +12,7 @@ LABEL maintainer="github.com/bjdgyc"
 
 ARG Commit
 ARG Ver
+ARG CN="no"
 
 ENV GOPATH=/go
 ENV GOTOOLCHAIN=local

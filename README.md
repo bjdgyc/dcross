@@ -39,7 +39,7 @@ sh build_docker.sh
 # release --skip=publish --debug
 
 
-docker run -it --rm -v $PWD:/app -v /go:/go -w /app registry.cn-qingdao.aliyuncs.com/bjdgyc/dcross \
+docker run -it --rm -v $PWD:/app -v /go:/go -w /app bjdgyc/dcross \
   goreleaser build --skip=validate --clean
 
 ```

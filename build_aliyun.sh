@@ -7,7 +7,8 @@ server="registry.cn-qingdao.aliyuncs.com"
 
 #> build.log 2>&1
 docker buildx build -t $server/bjdgyc/dcross --progress=plain \
-  --build-arg Commit=$(git rev-parse HEAD) --build-arg Ver=$ver .
+  --build-arg Commit=$(git rev-parse HEAD) --build-arg Ver=$ver \
+  --build-arg CN=yes .
 
 docker tag $server/bjdgyc/dcross:latest $server/bjdgyc/dcross:$ver
 

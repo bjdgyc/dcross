@@ -15,10 +15,12 @@ alias ls='ls --color=auto'
 alias tailf='tail -f'
 EOF
 
-#bookworm
-sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources
-#bullseye
-#sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+if [[ $CN == "yes" ]]; then
+  #bookworm
+  sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources
+  #bullseye
+  #sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+fi
 
 dpkg --add-architecture arm64
 #dpkg --add-architecture i386
