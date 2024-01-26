@@ -33,7 +33,7 @@ COPY --from=golang /usr/local/go /usr/local/go
 COPY init.sh /tmp/
 COPY soft/upx-4.2.2-amd64_linux.tar.xz /tmp/
 
-RUN sh /tmp/init.sh
+RUN bash /tmp/init.sh
 
 
 CMD ["cat","/etc/myinfo"]

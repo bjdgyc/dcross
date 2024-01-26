@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-#set -x
+set -x
 set -e
+
+echo $CN
 
 echo "dcross build info:" >/etc/myinfo
 echo $Ver >>/etc/myinfo
