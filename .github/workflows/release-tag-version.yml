@@ -21,10 +21,14 @@ jobs:
 
       - name: set env
         run: |
+          set -x
+          
           appVer=`cat version`
           commit=`git rev-parse HEAD`
           echo "APP_VER=$appVer" >> $GITHUB_ENV
           echo "COMMIT=$commit" >> $GITHUB_ENV
+          
+          echo ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
