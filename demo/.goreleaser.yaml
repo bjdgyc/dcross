@@ -1,6 +1,6 @@
 #https://goreleaser.com/static/schema.json
 
-# docker run -it --rm -v $PWD:/app -v /app:/app -w /app -e GOPROXY=https://goproxy.cn bjdgyc/gocross goreleaser build --skip=validate --clean --debug
+# docker run -it --rm -v $PWD:/app -v /app:/app -w /app -e GOPROXY=https://goproxy.cn registry.cn-hangzhou.aliyuncs.com/bjdgyc/gocross goreleaser build --skip=validate --clean --debug
 
 version: 1
 
