@@ -61,6 +61,7 @@ tar xf upx-4.2.2-amd64_linux.tar.xz
 cp upx-4.2.2-amd64_linux/upx /usr/local/bin/
 
 #清理缓存
-apt-get -y autoremove
+apt -y autoremove
 apt-get clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+rm -rf /usr/share/man/* /usr/share/doc/*

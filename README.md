@@ -62,5 +62,6 @@ https://github.com/tpoechtrager/osxcross
 https://github.com/crazy-max/docker-osxcross
 https://github.com/joseluisq/macosx-sdks
 https://github.com/goreleaser/goreleaser
+https://github.com/goreleaser/goreleaser-cross
 https://github.com/upx/upx
 ```
