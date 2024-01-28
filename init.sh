@@ -22,7 +22,9 @@ if [[ $CN == "yes" ]]; then
   #sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 fi
 
-dpkg --add-architecture arm64
+#dpkg --remove-architecture
+
+#dpkg --add-architecture arm64
 #dpkg --add-architecture i386
 #dpkg --add-architecture armel
 #dpkg --add-architecture armhf
@@ -41,7 +43,7 @@ apt-get install -y -q clang lld libc6-dev \
   ccache cmake patch git-core openssl curl wget tar xz-utils lzma vim llvm \
   binfmt-support binutils-multiarch build-essential
 
-apt-get install -y -q crossbuild-essential-arm64
+#apt-get install -y -q crossbuild-essential-arm64
 
 #  crossbuild-essential-i386
 #  crossbuild-essential-armel
@@ -54,6 +56,8 @@ apt-get install -y -q crossbuild-essential-arm64
 #ubuntu
 #apt-get install -y -q gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 #  gcc-mips64el-linux-gnuabi64 mingw-w64 gcc-mingw-w64 g++-mingw-w64
+
+apt-get install -y -q musl musl-dev musl-tools
 
 cd /tmp
 #https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-amd64_linux.tar.xz

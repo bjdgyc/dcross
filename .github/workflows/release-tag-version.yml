@@ -2,8 +2,8 @@ name: release-tag-version
 
 on:
   push:
-    branches:
-      - 'main'
+    #branches:
+    #  - 'main'
     tags:
       - "v0.*"
       - "v1.*"
