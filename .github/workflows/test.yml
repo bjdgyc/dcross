@@ -40,4 +40,5 @@ jobs:
       - name: mytest
         run: |
           go env
+          echo "################"
           env
