@@ -43,3 +43,5 @@ jobs:
           echo "################"
           env
           sudo apt-get install -y -q gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+          aarch64-linux-gnu-gcc -v 
+          aarch64-linux-gnu-g++ -v 
