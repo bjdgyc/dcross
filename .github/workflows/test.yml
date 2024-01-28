@@ -5,8 +5,10 @@ on:
 
 jobs:
   test:
-    runs-on: [ linux-arm64 ]
+    runs-on: [ ubuntu-latest, linux-arm64 ]
+    env:
+      TZ: Asia/Shanghai
     steps:
       - run: |
-          echo Hello world!
+          echo "Hello world!"
           uname -a
