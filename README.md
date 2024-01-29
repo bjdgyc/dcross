@@ -65,4 +65,5 @@ https://github.com/goreleaser/goreleaser
 https://github.com/goreleaser/goreleaser-cross
 https://github.com/upx/upx
 https://github.com/actions/runner-images
+https://github.com/techknowlogick/xgo
 ```
