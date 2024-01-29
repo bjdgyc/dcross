@@ -1,6 +1,7 @@
 name: release
 
 on:
+  workflow_dispatch:
   push:
     #branches:
     #  - 'main'
@@ -12,6 +13,8 @@ jobs:
   Build:
     name: build-binary
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     steps:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
