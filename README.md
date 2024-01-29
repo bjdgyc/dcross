@@ -64,4 +64,5 @@ https://github.com/joseluisq/macosx-sdks
 https://github.com/goreleaser/goreleaser
 https://github.com/goreleaser/goreleaser-cross
 https://github.com/upx/upx
+https://github.com/actions/runner-images
 ```
