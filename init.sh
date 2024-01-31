@@ -22,7 +22,7 @@ if [[ $CN == "yes" ]]; then
   #sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 fi
 
-#dpkg --remove-architecture
+#dpkg --remove-architecture arm64
 
 #dpkg --add-architecture arm64
 #dpkg --add-architecture i386
